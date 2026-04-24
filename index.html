@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Relatz</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-body{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;background:#fafaf9}
-.ms::-webkit-scrollbar{width:4px}.ms::-webkit-scrollbar-thumb{background:#d4d0c8;border-radius:4px}
-.fi{animation:fadein 0.2s ease-out}
-@keyframes fadein{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-</style>
-</head>
-<body>
-<div id="root"></div>
-<script>/**
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Relatz</title><script src="https://cdn.tailwindcss.com"></script><style>body{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;background:#fafaf9}.ms::-webkit-scrollbar{width:4px}.ms::-webkit-scrollbar-thumb{background:#d4d0c8;border-radius:4px}.fi{animation:fadein 0.2s ease-out}@keyframes fadein{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}</style></head><body><div id="root"></div><script>/**
  * @license React
  * react.production.min.js
  *
@@ -45,8 +29,7 @@ render:a}};c.isValidElement=M;c.lazy=function(a){return{$$typeof:Aa,_payload:{_s
 c.useEffect=function(a,b){return g.current.useEffect(a,b)};c.useId=function(){return g.current.useId()};c.useImperativeHandle=function(a,b,c){return g.current.useImperativeHandle(a,b,c)};c.useInsertionEffect=function(a,b){return g.current.useInsertionEffect(a,b)};c.useLayoutEffect=function(a,b){return g.current.useLayoutEffect(a,b)};c.useMemo=function(a,b){return g.current.useMemo(a,b)};c.useReducer=function(a,b,c){return g.current.useReducer(a,b,c)};c.useRef=function(a){return g.current.useRef(a)};
 c.useState=function(a){return g.current.useState(a)};c.useSyncExternalStore=function(a,b,c){return g.current.useSyncExternalStore(a,b,c)};c.useTransition=function(){return g.current.useTransition()};c.version="18.3.1"});
 })();
-</script>
-<script>/**
+</script><script>/**
  * @license React
  * react-dom.production.min.js
  *
@@ -313,8 +296,7 @@ c,!1,d,e);a[Ja]=b.current;sc(8===a.nodeType?a.parentNode:a);return new Xf(b)};Q.
 var d=null!=c&&c.hydratedSources||null,e=!1,f="",g=aj;null!==c&&void 0!==c&&(!0===c.unstable_strictMode&&(e=!0),void 0!==c.identifierPrefix&&(f=c.identifierPrefix),void 0!==c.onRecoverableError&&(g=c.onRecoverableError));b=Wi(b,null,a,1,null!=c?c:null,e,!1,f,g);a[Ja]=b.current;sc(a);if(d)for(a=0;a<d.length;a++)c=d[a],e=c._getVersion,e=e(c._source),null==b.mutableSourceEagerHydrationData?b.mutableSourceEagerHydrationData=[c,e]:b.mutableSourceEagerHydrationData.push(c,e);return new Ud(b)};Q.render=
 function(a,b,c){if(!Vd(b))throw Error(m(200));return Wd(null,a,b,!1,c)};Q.unmountComponentAtNode=function(a){if(!Vd(a))throw Error(m(40));return a._reactRootContainer?(yb(function(){Wd(null,null,a,!1,function(){a._reactRootContainer=null;a[Ja]=null})}),!0):!1};Q.unstable_batchedUpdates=Tf;Q.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!Vd(c))throw Error(m(200));if(null==a||void 0===a._reactInternals)throw Error(m(38));return Wd(a,b,c,!1,d)};Q.version="18.3.1-next-f1338f8080-20240426"});
 })();
-</script>
-<script>function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+</script><script>function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
@@ -332,6 +314,14 @@ var _React = React,
 
 // ── THEORY MODALS ────────────────────────────────────────────────────
 var THEORY = {
+  howto: {
+    title: "How to Use Relatz",
+    badge: "How to use",
+    bc: "bg-stone-50 border-stone-300",
+    tc: "bg-stone-200 text-stone-700",
+    body: "Relatz is a clinical self-awareness tool built around the idea that our relational patterns make sense once we understand where they came from. It is not a diagnosis and it is not therapy. It is a way of seeing yourself more clearly — and of having something useful to hand in the moment a pattern is activated.",
+    secs: [["The seven steps", "Start by choosing a relationship context — romantic, work, family, or friendship. Then pick the pattern that fits what is happening right now.\n\nThe seven steps walk you through:\n\n1. The pattern — what is happening and why it feels familiar\n2. Body — what your nervous system is doing right now\n3. Story — the narrative you are telling yourself\n4. Core belief — the underlying belief driving the pattern\n5. Schema — the early template this connects to\n6. Active part — which IFS part is most present\n7. Summary — your full picture, with tools\n\nYou do not have to complete all seven steps. Stop wherever feels right."], ["The summary screen", "The summary brings everything together in one place. It shows your pattern, body state, story, belief, schema and active part — and then gives you:\n\nA repair toolkit with five practical responses: pause, regulate, behaviour shift, boundary script, and internal reset.\n\nAttachment style, developmental template, and schema with Learn more buttons for deeper reading.\n\nWhat to say — three communication phrases for this specific pattern.\n\nRegulation tools matched to your nervous system state.\n\nSomatic tools, reality check questions, and research references."], ["The theory buttons", "The two rows of buttons at the top are reference material — tap any of them at any point.\n\n✦ Glimmers and ⬡ Ground are for right now — quick tools and moments of regulation, different each time you open them.\n\nThe coloured theory buttons open longer reference pieces: the nervous system, attachment theory, schemas, IFS parts, cognitive distortions, the fantasy bond, trauma, and more. These are background reading — useful for understanding why the patterns exist, not just what they are."], ["The ⓘ button on each pattern", "Each pattern card has a small ⓘ button in the corner. Tap it to open the Identify section — this explains what the pattern is, the signs you are in it, why it developed, and what it is not. Useful if you are not sure whether a pattern fits."], ["A note on how to use it", "This tool works best when you are in the pattern — when something has just happened and you can feel it in your body. The steps are designed to help you move from activation toward understanding and then toward a concrete response.\n\nIt is not designed to be read through from start to finish. It is designed to be reached for in a moment — the way you might reach for something grounding when you notice you have been activated.\n\nThe patterns, tools, and theory have been developed from clinical practice and the research literature. The tool is a starting point, not an ending point. If you find the same patterns appearing repeatedly, that is information worth taking into a therapeutic relationship where the deeper work can happen."]]
+  },
   iwm: {
     title: "Internal Working Models",
     badge: "Attachment Theory",
@@ -342,7 +332,7 @@ var THEORY = {
   },
   polyvagal: {
     title: "Polyvagal Theory, Window of Tolerance and the Nervous System",
-    badge: "Porges / Dana / Siegel / Levine",
+    badge: "Nervous System",
     bc: "bg-teal-50 border-teal-200",
     tc: "bg-teal-100 text-teal-700",
     body: "Your nervous system is not a reflection of your personality. It is a biological system built for survival that automatically scans the environment for safety or danger and shifts between states accordingly. Understanding which state you are in is the beginning of being able to work with it rather than against it.",
@@ -374,7 +364,7 @@ var THEORY = {
   },
   fourfs: {
     title: "The 4F Trauma Response Styles",
-    badge: "Fight / Flight / Fix / Freeze / Fawn",
+    badge: "4Fs & Window of Tolerance",
     bc: "bg-amber-50 border-amber-200",
     tc: "bg-amber-100 text-amber-700",
     body: "The four survival styles — Fight, Flight, Freeze, and Fawn — are trauma-based personality patterns that develop in childhood as adaptations to environments of abuse, neglect, chronic unsafety, or unpredictable caregiving. They are not short-term threat responses. They are ingrained relational architectures that shape how a person approaches connection, conflict, emotion, and self-worth across the lifespan. Each sits on a spectrum. Most people carry a blend of all four with one or two dominant.",
@@ -382,7 +372,7 @@ var THEORY = {
   },
   ace: {
     title: "The ACE Study",
-    badge: "Research",
+    badge: "ACE Study",
     bc: "bg-emerald-50 border-emerald-200",
     tc: "bg-emerald-100 text-emerald-700",
     body: "The Adverse Childhood Experiences Study is one of the largest investigations into the social determinants of health ever conducted. Carried out by Felitti and Anda with 17,421 adults, it established a powerful relationship between emotional experiences in childhood and physical and mental health across the entire lifespan.",
@@ -390,7 +380,7 @@ var THEORY = {
   },
   survival: {
     title: "The Survival Split, the Fantasy Bond and the Trauma Pot",
-    badge: "Dissociation / Object Relations / Grief",
+    badge: "Fantasy Bond & Survival Split",
     bc: "bg-rose-50 border-rose-200",
     tc: "bg-rose-100 text-rose-700",
     body: "To survive early caregiving that was inadequate, frightening, or inconsistent, the child does something remarkable and costly: they split. They preserve an idealised version of the caregiver in order to maintain the attachment that keeps them alive — and they bury the evidence of their own unmet needs, their authentic emotional responses, and their real self deep where it cannot threaten that survival. This is not a failure of the child. It is an extraordinarily intelligent adaptation to an impossible situation. The cost is paid later.",
@@ -398,7 +388,7 @@ var THEORY = {
   },
   commstools: {
     title: "In the Moment — Communication Tools and Mantras",
-    badge: "Scripts / Repair / Challenge",
+    badge: "Communication & Repair",
     bc: "bg-emerald-50 border-emerald-200",
     tc: "bg-emerald-100 text-emerald-700",
     body: "These tools are for the moments when you are actually in it — when the conversation is happening, the dynamic is activated, and you need something concrete to say or do. None of these require the other person to cooperate. They are about what you can do from your side, regardless of what is happening on theirs. The goal is not to win. It is to stay in your own nervous system, hold your position, and not abandon yourself in the process.",
@@ -406,7 +396,7 @@ var THEORY = {
   },
   distortions: {
     title: "Cognitive Distortions",
-    badge: "Beck / Burns / Ellis / Seligman",
+    badge: "Cognitive Distortions",
     bc: "bg-sky-50 border-sky-200",
     tc: "bg-sky-100 text-sky-700",
     body: "Cognitive distortions are systematic patterns of thinking that are biased away from reality. Aaron Beck first identified them in the 1960s while developing cognitive therapy for depression. David Burns expanded and popularised the framework in his clinical work. Albert Ellis developed a parallel model through Rational Emotive Behaviour Therapy, identifying what he called irrational beliefs. Martin Seligman contributed the explanatory styles framework — how people habitually explain setbacks to themselves. Together these theorists mapped the cognitive architecture of emotional suffering. They are not character flaws — they are habits of mind, often learned in environments where they were adaptive. Recognising them is the first step to challenging them. The goal is not to replace them with forced positivity but with more accurate, balanced thinking.",
@@ -414,7 +404,7 @@ var THEORY = {
   },
   selfcare: {
     title: "Self-Care — Restoring the System",
-    badge: "Wellbeing / Recovery",
+    badge: "Self-Care",
     bc: "bg-lime-50 border-lime-200",
     tc: "bg-lime-100 text-lime-700",
     body: "Self-care is not indulgence. It is the maintenance of the system that everything else runs on. When the nervous system is chronically activated — by patterns of over-responsibility, emotional neglect, boundary violation, or relentless self-monitoring — the body and mind need consistent, deliberate replenishment. This is not optional for people doing relational healing work. It is the foundation.",
@@ -422,7 +412,7 @@ var THEORY = {
   },
   stresstrauma: {
     title: "Stress, Trauma and Complex Trauma",
-    badge: "Stress / Trauma / C-PTSD",
+    badge: "Stress vs Trauma",
     bc: "bg-violet-50 border-violet-200",
     tc: "bg-violet-100 text-violet-700",
     body: "The words stress and trauma are used interchangeably in everyday language but they describe significantly different things clinically. The distinction matters because the tools that help, and the timescale of recovery, are different for each.",
@@ -2444,38 +2434,42 @@ function App() {
     _useState4 = _slicedToArray(_useState3, 2),
     cat = _useState4[0],
     setCat = _useState4[1];
-  var _useState5 = useState(1),
+  var _useState5 = useState(false),
     _useState6 = _slicedToArray(_useState5, 2),
-    step = _useState6[0],
-    setStep = _useState6[1];
-  var _useState7 = useState(null),
+    showToolbox = _useState6[0],
+    setShowToolbox = _useState6[1];
+  var _useState7 = useState(1),
     _useState8 = _slicedToArray(_useState7, 2),
-    sel = _useState8[0],
-    setSel = _useState8[1];
-  var _useState9 = useState(""),
+    step = _useState8[0],
+    setStep = _useState8[1];
+  var _useState9 = useState(null),
     _useState0 = _slicedToArray(_useState9, 2),
-    body = _useState0[0],
-    setBody = _useState0[1];
+    sel = _useState0[0],
+    setSel = _useState0[1];
   var _useState1 = useState(""),
     _useState10 = _slicedToArray(_useState1, 2),
-    story = _useState10[0],
-    setStory = _useState10[1];
+    body = _useState10[0],
+    setBody = _useState10[1];
   var _useState11 = useState(""),
     _useState12 = _slicedToArray(_useState11, 2),
-    belief = _useState12[0],
-    setBelief = _useState12[1];
+    story = _useState12[0],
+    setStory = _useState12[1];
   var _useState13 = useState(""),
     _useState14 = _slicedToArray(_useState13, 2),
-    schema = _useState14[0],
-    setSchema = _useState14[1];
+    belief = _useState14[0],
+    setBelief = _useState14[1];
   var _useState15 = useState(""),
     _useState16 = _slicedToArray(_useState15, 2),
-    part = _useState16[0],
-    setPart = _useState16[1];
-  var _useState17 = useState(null),
+    schema = _useState16[0],
+    setSchema = _useState16[1];
+  var _useState17 = useState(""),
     _useState18 = _slicedToArray(_useState17, 2),
-    modal = _useState18[0],
-    setModal = _useState18[1];
+    part = _useState18[0],
+    setPart = _useState18[1];
+  var _useState19 = useState(null),
+    _useState20 = _slicedToArray(_useState19, 2),
+    modal = _useState20[0],
+    setModal = _useState20[1];
   var open = useCallback(function (d) {
     return setModal(d);
   }, []);
@@ -2492,6 +2486,7 @@ function App() {
     setSchema("");
     setPart("");
     setModal(null);
+    setShowToolbox(false);
   };
   var TOTAL = 7;
   var activePatterns = cat === 'work' ? workPatterns : cat === 'family' ? familyPatterns : cat === 'friend' ? friendPatterns : patterns;
@@ -2516,8 +2511,70 @@ function App() {
     }
   }, "z")), /*#__PURE__*/React.createElement("p", {
     className: "text-xs tracking-[0.2em] uppercase text-stone-400 mt-1 font-medium"
-  }, "Understand. Connect. Grow.")), /*#__PURE__*/React.createElement("div", {
-    className: "mb-4 flex flex-wrap gap-1.5"
+  }, "Understand. Connect. Grow. Relationships.")), /*#__PURE__*/React.createElement("div", {
+    className: "mb-5 flex gap-2"
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      return open(THEORY.howto);
+    },
+    className: "px-4 py-2 rounded-full border-2 hover:opacity-80 transition",
+    style: {
+      background: "#eef2ff",
+      borderColor: "#c7d2fe"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "Georgia,'Times New Roman',serif",
+      color: "#1e2a4a",
+      fontSize: "15px",
+      fontWeight: "700"
+    }
+  }, "using relat"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "Georgia,'Times New Roman',serif",
+      color: "#7c3aed",
+      fontSize: "15px",
+      fontWeight: "700"
+    }
+  }, "z")), /*#__PURE__*/React.createElement("button", {
+    onClick: function onClick() {
+      return setShowToolbox(function (t) {
+        return !t;
+      });
+    },
+    className: "px-4 py-2 rounded-full border-2 hover:opacity-80 transition",
+    style: {
+      background: "#eef2ff",
+      borderColor: "#c7d2fe"
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "Georgia,'Times New Roman',serif",
+      color: "#1e2a4a",
+      fontSize: "15px",
+      fontWeight: "700"
+    }
+  }, "relat"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: "Georgia,'Times New Roman',serif",
+      color: "#7c3aed",
+      fontSize: "15px",
+      fontWeight: "700"
+    }
+  }, "z"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: "#1e2a4a",
+      fontSize: "15px",
+      fontWeight: "700"
+    }
+  }, " toolbox"))), showToolbox && /*#__PURE__*/React.createElement("div", {
+    className: "mb-4 p-3 rounded-2xl border border-stone-200 bg-white shadow-sm fi"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "text-xs uppercase tracking-wide text-stone-400 font-medium mb-2"
+  }, "Quick tools"), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-wrap gap-1.5"
   }, /*#__PURE__*/React.createElement("button", {
     onClick: function onClick() {
       var g = pickGlimmers();
@@ -2531,8 +2588,9 @@ function App() {
           return [gl.title, gl.desc];
         })
       });
+      setShowToolbox(false);
     },
-    className: "text-xs px-2.5 py-1 rounded-full border font-medium hover:opacity-80 transition bg-yellow-50 border-yellow-200 text-yellow-700"
+    className: "text-xs px-2.5 py-1 rounded-full border font-medium bg-yellow-50 border-yellow-200 text-yellow-700 hover:bg-yellow-100 transition"
   }, "\u2726 Glimmers"), /*#__PURE__*/React.createElement("button", {
     onClick: function onClick() {
       var g = pickGrounding();
@@ -2546,30 +2604,53 @@ function App() {
           return [t.name, t.steps];
         })
       });
+      setShowToolbox(false);
     },
-    className: "text-xs px-2.5 py-1 rounded-full border font-medium hover:opacity-80 transition bg-stone-100 border-stone-300 text-stone-700"
-  }, "\u2B21 Ground"), Object.entries(THEORY).map(function (_ref7) {
-    var _ref8 = _slicedToArray(_ref7, 2),
-      k = _ref8[0],
-      v = _ref8[1];
+    className: "text-xs px-2.5 py-1 rounded-full border font-medium bg-stone-100 border-stone-300 text-stone-700 hover:bg-stone-200 transition"
+  }, "\u2B21 Ground"))), /*#__PURE__*/React.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "text-xs uppercase tracking-wide text-stone-400 font-medium mb-2"
+  }, "Nervous system & trauma"), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-wrap gap-1.5"
+  }, ["polyvagal", "fourfs", "stresstrauma", "survival"].map(function (k) {
     return /*#__PURE__*/React.createElement("button", {
       key: k,
       onClick: function onClick() {
-        return open(v);
+        open(THEORY[k]);
+        setShowToolbox(false);
       },
-      className: "text-xs px-2.5 py-1 rounded-full border font-medium hover:opacity-80 transition " + v.bc + " " + v.tc
-    }, v.badge);
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "mb-5 flex flex-wrap gap-1.5 text-xs"
-  }, [["bg-red-100 border-red-200 text-red-700", "red - urgency"], ["bg-cyan-100 border-cyan-200 text-cyan-700", "blue - withdrawal"], ["bg-violet-100 border-violet-200 text-violet-700", "purple - push-pull"], ["bg-amber-100 border-amber-200 text-amber-700", "yellow - overthinking"], ["bg-emerald-100 border-emerald-200 text-emerald-700", "green - self-return"]].map(function (_ref9) {
-    var _ref0 = _slicedToArray(_ref9, 2),
-      c = _ref0[0],
-      l = _ref0[1];
-    return /*#__PURE__*/React.createElement("span", {
-      key: l,
-      className: "px-2.5 py-1 rounded-full border " + c
-    }, l);
-  })), cat && step > 1 && /*#__PURE__*/React.createElement("div", {
+      className: "text-xs px-2.5 py-1 rounded-full border font-medium hover:opacity-80 transition " + THEORY[k].bc + " " + THEORY[k].tc
+    }, THEORY[k].badge);
+  }))), /*#__PURE__*/React.createElement("div", {
+    className: "mb-3"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "text-xs uppercase tracking-wide text-stone-400 font-medium mb-2"
+  }, "Clinical frameworks"), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-wrap gap-1.5"
+  }, ["iwm", "schemas", "ifs", "emdr", "ace"].map(function (k) {
+    return /*#__PURE__*/React.createElement("button", {
+      key: k,
+      onClick: function onClick() {
+        open(THEORY[k]);
+        setShowToolbox(false);
+      },
+      className: "text-xs px-2.5 py-1 rounded-full border font-medium hover:opacity-80 transition " + THEORY[k].bc + " " + THEORY[k].tc
+    }, THEORY[k].badge);
+  }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    className: "text-xs uppercase tracking-wide text-stone-400 font-medium mb-2"
+  }, "Skills & support"), /*#__PURE__*/React.createElement("div", {
+    className: "flex flex-wrap gap-1.5"
+  }, ["commstools", "distortions", "selfcare"].map(function (k) {
+    return /*#__PURE__*/React.createElement("button", {
+      key: k,
+      onClick: function onClick() {
+        open(THEORY[k]);
+        setShowToolbox(false);
+      },
+      className: "text-xs px-2.5 py-1 rounded-full border font-medium hover:opacity-80 transition " + THEORY[k].bc + " " + THEORY[k].tc
+    }, THEORY[k].badge);
+  })))), cat && step > 1 && /*#__PURE__*/React.createElement("div", {
     className: "flex gap-1 mb-6"
   }, Array.from({
     length: TOTAL
@@ -2582,7 +2663,7 @@ function App() {
     className: "fi"
   }, !cat ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
     className: "text-xl font-medium mb-2"
-  }, "Which relationship is this about?"), /*#__PURE__*/React.createElement("p", {
+  }, "Relationship Type"), /*#__PURE__*/React.createElement("p", {
     className: "text-sm text-stone-400 mb-5"
   }, "Choose a context to see the patterns that apply."), /*#__PURE__*/React.createElement("div", {
     className: "grid gap-3 sm:grid-cols-2"
@@ -2689,81 +2770,7 @@ function App() {
     className: "font-semibold text-sm"
   }, sel.name)), /*#__PURE__*/React.createElement("div", {
     className: "text-xs text-stone-500 pl-4 mt-0.5"
-  }, sel.cue)), /*#__PURE__*/React.createElement("div", {
-    className: "mb-4 rounded-2xl border border-stone-200 bg-white overflow-hidden shadow-sm"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center justify-between px-3 py-2 border-b border-stone-100"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "text-xs font-medium text-stone-500"
-  }, "Theory & tools")), /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-wrap gap-1.5 px-3 pb-2 pt-1"
-  }, /*#__PURE__*/React.createElement("button", {
-    onClick: function onClick() {
-      var g = pickGlimmers();
-      open({
-        title: "Glimmers",
-        badge: "Deb Dana",
-        bc: "bg-yellow-50 border-yellow-200",
-        tc: "bg-yellow-100 text-yellow-700",
-        body: "Glimmers are small moments when the nervous system briefly touches the ventral vagal state — the state of safety, connection, and aliveness. They are the neurological opposite of triggers. A new set appears each time you open this. Notice one today. Stay with it for ten seconds.",
-        secs: g.map(function (gl) {
-          return [gl.title, gl.desc];
-        })
-      });
-    },
-    className: "text-xs px-2 py-0.5 rounded-full bg-yellow-50 border border-yellow-200 text-yellow-700 hover:bg-yellow-100 transition font-medium"
-  }, "\u2726 Glimmers"), /*#__PURE__*/React.createElement("button", {
-    onClick: function onClick() {
-      return open(THEORY.polyvagal);
-    },
-    className: "text-xs px-2 py-0.5 rounded-full bg-teal-50 border border-teal-200 text-teal-700 hover:bg-teal-100 transition"
-  }, "Nervous System & Window of Tolerance"), /*#__PURE__*/React.createElement("button", {
-    onClick: function onClick() {
-      return open(THEORY.survival);
-    },
-    className: "text-xs px-2 py-0.5 rounded-full bg-rose-50 border border-rose-200 text-rose-700 hover:bg-rose-100 transition"
-  }, "Fantasy Bond & Trauma Pot"), /*#__PURE__*/React.createElement("button", {
-    onClick: function onClick() {
-      return open(THEORY.commstools);
-    },
-    className: "text-xs px-2 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 hover:bg-emerald-100 transition"
-  }, "Communication Tools & Mantras"), /*#__PURE__*/React.createElement("button", {
-    onClick: function onClick() {
-      return open(THEORY.distortions);
-    },
-    className: "text-xs px-2 py-0.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 hover:bg-sky-100 transition"
-  }, "Cognitive Distortions"), /*#__PURE__*/React.createElement("button", {
-    onClick: function onClick() {
-      return open(THEORY.selfcare);
-    },
-    className: "text-xs px-2 py-0.5 rounded-full bg-lime-50 border border-lime-200 text-lime-700 hover:bg-lime-100 transition"
-  }, "Self-Care")), /*#__PURE__*/React.createElement("div", {
-    className: "grid grid-cols-3 divide-x divide-stone-100"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "p-3 text-center"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-xs font-semibold text-red-600 mb-1"
-  }, "Mobilised"), /*#__PURE__*/React.createElement("div", {
-    className: "text-xs text-stone-500 mb-0.5"
-  }, "Hyperarousal"), /*#__PURE__*/React.createElement("div", {
-    className: "text-xs text-stone-400 leading-tight"
-  }, "Anxious, urgent, activated, racing, flooded")), /*#__PURE__*/React.createElement("div", {
-    className: "p-3 text-center bg-emerald-50/60"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-xs font-semibold text-emerald-700 mb-1"
-  }, "In window"), /*#__PURE__*/React.createElement("div", {
-    className: "text-xs text-stone-500 mb-0.5"
-  }, "Ventral vagal"), /*#__PURE__*/React.createElement("div", {
-    className: "text-xs text-stone-400 leading-tight"
-  }, "Calm, present, curious, able to think")), /*#__PURE__*/React.createElement("div", {
-    className: "p-3 text-center"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "text-xs font-semibold text-slate-500 mb-1"
-  }, "Immobilised"), /*#__PURE__*/React.createElement("div", {
-    className: "text-xs text-stone-500 mb-0.5"
-  }, "Hypoarousal"), /*#__PURE__*/React.createElement("div", {
-    className: "text-xs text-stone-400 leading-tight"
-  }, "Flat, numb, frozen, shutdown, heavy")))), /*#__PURE__*/React.createElement("h2", {
+  }, sel.cue)), /*#__PURE__*/React.createElement("h2", {
     className: "text-xl font-medium mb-1"
   }, "What is your body doing?"), /*#__PURE__*/React.createElement("p", {
     className: "text-sm text-stone-400 mb-4"
@@ -3255,6 +3262,4 @@ function App() {
   }));
 }
 ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
-</script>
-</body>
-</html>
+</script></body></html>
