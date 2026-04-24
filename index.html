@@ -315,12 +315,12 @@ var _React = React,
 // ── THEORY MODALS ────────────────────────────────────────────────────
 var THEORY = {
   howto: {
-    title: "How to Use Relatz",
-    badge: "How to use",
-    bc: "bg-stone-50 border-stone-300",
-    tc: "bg-stone-200 text-stone-700",
-    body: "Relatz is a clinical self-awareness tool built around the idea that our relational patterns make sense once we understand where they came from. It is not a diagnosis and it is not therapy. It is a way of seeing yourself more clearly — and of having something useful to hand in the moment a pattern is activated.",
-    secs: [["The seven steps", "Start by choosing a relationship context — romantic, work, family, or friendship. Then pick the pattern that fits what is happening right now.\n\nThe seven steps walk you through:\n\n1. The pattern — what is happening and why it feels familiar\n2. Body — what your nervous system is doing right now\n3. Story — the narrative you are telling yourself\n4. Core belief — the underlying belief driving the pattern\n5. Schema — the early template this connects to\n6. Active part — which IFS part is most present\n7. Summary — your full picture, with tools\n\nYou do not have to complete all seven steps. Stop wherever feels right."], ["The summary screen", "The summary brings everything together in one place. It shows your pattern, body state, story, belief, schema and active part — and then gives you:\n\nA repair toolkit with five practical responses: pause, regulate, behaviour shift, boundary script, and internal reset.\n\nAttachment style, developmental template, and schema with Learn more buttons for deeper reading.\n\nWhat to say — three communication phrases for this specific pattern.\n\nRegulation tools matched to your nervous system state.\n\nSomatic tools, reality check questions, and research references."], ["The theory buttons", "The two rows of buttons at the top are reference material — tap any of them at any point.\n\n✦ Glimmers and ⬡ Ground are for right now — quick tools and moments of regulation, different each time you open them.\n\nThe coloured theory buttons open longer reference pieces: the nervous system, attachment theory, schemas, IFS parts, cognitive distortions, the fantasy bond, trauma, and more. These are background reading — useful for understanding why the patterns exist, not just what they are."], ["The ⓘ button on each pattern", "Each pattern card has a small ⓘ button in the corner. Tap it to open the Identify section — this explains what the pattern is, the signs you are in it, why it developed, and what it is not. Useful if you are not sure whether a pattern fits."], ["A note on how to use it", "This tool works best when you are in the pattern — when something has just happened and you can feel it in your body. The steps are designed to help you move from activation toward understanding and then toward a concrete response.\n\nIt is not designed to be read through from start to finish. It is designed to be reached for in a moment — the way you might reach for something grounding when you notice you have been activated.\n\nThe patterns, tools, and theory have been developed from clinical practice and the research literature. The tool is a starting point, not an ending point. If you find the same patterns appearing repeatedly, that is information worth taking into a therapeutic relationship where the deeper work can happen."]]
+    title: "using relatz",
+    badge: "Start here",
+    bc: "bg-indigo-50 border-indigo-200",
+    tc: "bg-indigo-100 text-indigo-700",
+    body: "relatz is a clinical self-awareness tool. It helps you understand what is happening in your body and your relationships — and gives you something concrete to do with that understanding. Use it when you notice a pattern activating. The seven steps take 3 to 5 minutes.",
+    secs: [["① Choose your relationship type", "Tap the relationship context that fits right now — romantic, work, family, or friendship. This takes you to the pattern cards for that context."], ["② Pick the pattern", "Scroll through the cards and find the one that fits what is happening. Each card shows a name and a brief description. If you are not sure, tap the small ⓘ button in the corner of any card — this opens a fuller explanation of what the pattern is, the signs you are in it, and what it is not."], ["③ Work through the steps", "The app walks you through seven steps:\n\nBody — what your nervous system is doing right now\nStory — the narrative you are telling yourself\nCore belief — the underlying belief driving the pattern\nSchema — the early template this connects to\nActive part — which IFS part is most present\n\nYou do not have to complete all seven. Stop wherever feels right."], ["④ Read your summary", "The summary brings everything together. It shows your pattern, body state, story, belief, schema and active part — and then gives you:\n\n→ Repair toolkit: pause, regulate, behaviour shift, boundary script, internal reset\n→ What to say: three communication phrases for this pattern\n→ Regulation tools matched to your nervous system state\n→ Attachment style, developmental template and schema with deeper reading\n→ Somatic tools, reality check questions, and research references"], ["The buttons at the top", "✦ Glimmers — tap for a small moment of regulation. Different ones each time. Stay with one for ten seconds.\n\n⬡ Ground — tap for a quick body-based tool to use right now. Different each time. Read once then do it.\n\nrelatz toolbox — all the theory and reference material. Tap any button to read about the nervous system, attachment, schemas, IFS, trauma, cognitive distortions, and more.\n\nusing relatz — you are here."], ["A note on when to use it", "This tool works best when you are in the pattern — when something has just happened and you can feel it. It is not designed to be read through from start to finish. Reach for it the way you might reach for something grounding when you notice you have been activated.\n\nIf the same patterns keep appearing, that is information worth bringing into a therapeutic relationship where the deeper work can happen."]]
   },
   iwm: {
     title: "Internal Working Models",
@@ -2352,7 +2352,7 @@ function Modal(_ref) {
     }, c));
   }), data.signs && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "text-xs uppercase tracking-wide text-stone-400 mb-2"
-  }, "Signs you might be in this pattern"), /*#__PURE__*/React.createElement("ul", {
+  }, "Signs you might be in this hook"), /*#__PURE__*/React.createElement("ul", {
     className: "space-y-1.5"
   }, data.signs.map(function (s, i) {
     return /*#__PURE__*/React.createElement("li", {
@@ -2430,46 +2430,59 @@ function References() {
 
 // ── MAIN APP ─────────────────────────────────────────────────────────
 function App() {
-  var _useState3 = useState(''),
+  var _useState3 = useState(false),
     _useState4 = _slicedToArray(_useState3, 2),
-    cat = _useState4[0],
-    setCat = _useState4[1];
-  var _useState5 = useState(false),
+    authed = _useState4[0],
+    setAuthed = _useState4[1];
+  var _useState5 = useState(''),
     _useState6 = _slicedToArray(_useState5, 2),
-    showToolbox = _useState6[0],
-    setShowToolbox = _useState6[1];
-  var _useState7 = useState(1),
+    pwInput = _useState6[0],
+    setPwInput = _useState6[1];
+  var _useState7 = useState(false),
     _useState8 = _slicedToArray(_useState7, 2),
-    step = _useState8[0],
-    setStep = _useState8[1];
-  var _useState9 = useState(null),
+    pwError = _useState8[0],
+    setPwError = _useState8[1];
+  var PASS = 'relatz2025';
+  var _useState9 = useState(''),
     _useState0 = _slicedToArray(_useState9, 2),
-    sel = _useState0[0],
-    setSel = _useState0[1];
-  var _useState1 = useState(""),
+    cat = _useState0[0],
+    setCat = _useState0[1];
+  var _useState1 = useState(false),
     _useState10 = _slicedToArray(_useState1, 2),
-    body = _useState10[0],
-    setBody = _useState10[1];
-  var _useState11 = useState(""),
+    showToolbox = _useState10[0],
+    setShowToolbox = _useState10[1];
+  var _useState11 = useState(1),
     _useState12 = _slicedToArray(_useState11, 2),
-    story = _useState12[0],
-    setStory = _useState12[1];
-  var _useState13 = useState(""),
+    step = _useState12[0],
+    setStep = _useState12[1];
+  var _useState13 = useState(null),
     _useState14 = _slicedToArray(_useState13, 2),
-    belief = _useState14[0],
-    setBelief = _useState14[1];
+    sel = _useState14[0],
+    setSel = _useState14[1];
   var _useState15 = useState(""),
     _useState16 = _slicedToArray(_useState15, 2),
-    schema = _useState16[0],
-    setSchema = _useState16[1];
+    body = _useState16[0],
+    setBody = _useState16[1];
   var _useState17 = useState(""),
     _useState18 = _slicedToArray(_useState17, 2),
-    part = _useState18[0],
-    setPart = _useState18[1];
-  var _useState19 = useState(null),
+    story = _useState18[0],
+    setStory = _useState18[1];
+  var _useState19 = useState(""),
     _useState20 = _slicedToArray(_useState19, 2),
-    modal = _useState20[0],
-    setModal = _useState20[1];
+    belief = _useState20[0],
+    setBelief = _useState20[1];
+  var _useState21 = useState(""),
+    _useState22 = _slicedToArray(_useState21, 2),
+    schema = _useState22[0],
+    setSchema = _useState22[1];
+  var _useState23 = useState(""),
+    _useState24 = _slicedToArray(_useState23, 2),
+    part = _useState24[0],
+    setPart = _useState24[1];
+  var _useState25 = useState(null),
+    _useState26 = _slicedToArray(_useState25, 2),
+    modal = _useState26[0],
+    setModal = _useState26[1];
   var open = useCallback(function (d) {
     return setModal(d);
   }, []);
@@ -2665,12 +2678,12 @@ function App() {
     className: "text-xl font-medium mb-2"
   }, "Relationship Type"), /*#__PURE__*/React.createElement("p", {
     className: "text-sm text-stone-400 mb-5"
-  }, "Choose a context to see the patterns that apply."), /*#__PURE__*/React.createElement("div", {
+  }, "Choose a context to see the hooks that apply."), /*#__PURE__*/React.createElement("div", {
     className: "grid gap-3 sm:grid-cols-2"
   }, [{
     id: "romantic",
     label: "Romantic and close relationships",
-    desc: "Partners, dating, intimacy, attachment patterns",
+    desc: "Partners, dating, intimacy, attachment hooks",
     color: "border-red-200 bg-red-50",
     dot: "bg-red-400"
   }, {
@@ -2742,7 +2755,7 @@ function App() {
         e.stopPropagation();
         open({
           title: p.name,
-          badge: "Identify this pattern",
+          badge: "Identify this hook",
           bc: "bg-stone-50 border-stone-200",
           tc: "bg-stone-200 text-stone-600",
           body: id.what,
@@ -2840,7 +2853,7 @@ function App() {
     className: "text-xl font-medium"
   }, "What is the belief underneath?")), /*#__PURE__*/React.createElement("p", {
     className: "text-sm text-stone-400 mb-4"
-  }, "The deeper assumption driving the pattern."), /*#__PURE__*/React.createElement("div", {
+  }, "The deeper assumption driving this hook."), /*#__PURE__*/React.createElement("div", {
     className: "grid gap-2"
   }, sel.beliefs.map(function (b) {
     return /*#__PURE__*/React.createElement("button", {
@@ -2960,7 +2973,7 @@ function App() {
     className: "p-4 rounded-2xl border-2 shadow-sm " + sel.color
   }, /*#__PURE__*/React.createElement("div", {
     className: "text-xs uppercase tracking-wide text-stone-400 mb-1"
-  }, "Pattern identified"), /*#__PURE__*/React.createElement("div", {
+  }, "Hook identified"), /*#__PURE__*/React.createElement("div", {
     className: "font-semibold"
   }, sel.name), /*#__PURE__*/React.createElement("div", {
     className: "text-xs text-stone-500 mt-0.5"
